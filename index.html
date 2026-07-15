@@ -1,0 +1,490 @@
+<title>A777ance — 90-Day Marketing Strategy: Western MA &amp; Connecticut</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbf9f4;
+    --fg: #2a2723;
+    --muted: #6b665e;
+    --accent: #8a5a2b;
+    --line: #d9d2c3;
+    --table-head: #efe8d8;
+    --table-stripe: #f5f1e6;
+    --code-bg: #efe8d8;
+    --link: #7a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1a17;
+      --fg: #ece7dc;
+      --muted: #b3ac9d;
+      --accent: #d3a15e;
+      --line: #3a352c;
+      --table-head: #2a2620;
+      --table-stripe: #221f1a;
+      --code-bg: #2a2620;
+      --link: #e0b06f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0 1.25rem 4rem;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  header.page {
+    padding: 2.5rem 0 1.25rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 0.4rem; letter-spacing: 0.01em; }
+  .byline { color: var(--muted); font-style: italic; font-size: 0.95rem; }
+  h2 {
+    margin-top: 2.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.35rem;
+  }
+  h3 { margin-top: 2rem; font-size: 1.12rem; color: var(--accent); }
+  h4 { margin-top: 1.6rem; font-size: 1.02rem; }
+  p, li { font-size: 0.98rem; }
+  a { color: var(--link); }
+  code {
+    background: var(--code-bg);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    font-size: 0.88em;
+  }
+  .note {
+    background: var(--table-stripe);
+    border-left: 3px solid var(--accent);
+    padding: 0.85rem 1rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.88rem;
+  }
+  caption { text-align: left; font-weight: bold; margin-bottom: 0.4rem; }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--table-head); }
+  tr:nth-child(even) td { background: var(--table-stripe); }
+  .tablewrap { overflow-x: auto; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 2.2rem 0; }
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 0.1rem 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+
+<div class="wrap">
+<header class="page">
+  <h1>A777ance — 90-Day Marketing Strategy: Western MA &amp; Connecticut</h1>
+  <p class="byline">Drafted 2026-07-14, pricing corrected 2026-07-15. Executes the Phase 1 roadmap
+  already in <code>MARKETING/README.md</code> ("liquidity before app, trust before tech") against a
+  specific geography and a real prospect list. Pricing follows the <strong>Master Amounts
+  Calculator</strong> (<code>claude/master-amounts-calculator-okqphz</code>,
+  <code>pricing/master-amounts-calculator.html</code>) — confirmed authoritative, superseding the
+  README's older ADR-007 "$175 + $35/mo standard" figure and the "$29/mo founding" promo, which the
+  calculator doesn't model. Only the $50/mo flat operator due (ADR-005) matches across both sources.</p>
+</header>
+
+<h2>1. Why this geography</h2>
+<p>Two clusters, chosen for <strong>route density</strong>, not sprawl — the "zip-code-at-a-time"
+rule in the existing roadmap means scattered homes exhaust an operator, so the 90-day radius should
+be small enough to drive in one afternoon:</p>
+<ul>
+  <li><strong>Anchor cluster — Pioneer Valley, Western MA:</strong> Northampton, Amherst, Hadley,
+    Easthampton, Florence, South Hadley, West Springfield, Springfield.</li>
+  <li><strong>Adjacent cluster — North-Central CT:</strong> Enfield, Suffield, Windsor Locks,
+    Simsbury, Granby — a 20–30 min drive south of Northampton down I-91, so one operator route can
+    plausibly cover both sides of the state line without a second hire.</li>
+</ul>
+<p>Don't try to cover all of Western MA + all of CT in 90 days. Pick <strong>one town in each
+cluster</strong> to go deep in first (recommend Northampton, MA + Enfield or Simsbury, CT), then
+expand ring-by-ring only once density is proven there.</p>
+
+<hr>
+
+<h2>2. The 90-day plan (phased, per the existing roadmap)</h2>
+
+<h3>Days 1–30 — Proof + positioning</h3>
+<ul>
+  <li><strong>Turn the existing 3 clients into case studies.</strong> Named or anonymized
+    testimonials ("Jose patched my fridge while I slept"). This is the single highest-leverage
+    asset you have and it's unused — do it before any outreach.</li>
+  <li><strong>Own "pest control for your network"</strong> in local content: 2–3 short posts/pages
+    answering "is your smart TV spying on you?" / "why grandma's tablet is a target" — written for
+    a Northampton/Enfield reader, not a general audience.</li>
+  <li><strong>Pick the lead town per cluster</strong> (see §1) and map every household you can
+    reasonably reach by referral or door route in that town — this is your Phase 1 density target,
+    not "Western MA" as a whole.</li>
+  <li><strong>Draft outreach scripts per channel type</strong> (see §4) — one for HOA/property
+    managers, one for real-estate agents, one for elder-care agencies, one for potential operator
+    recruits (local IT/computer-repair techs).</li>
+</ul>
+
+<h3>Days 31–60 — Channel partner outreach + operator recruiting</h3>
+<ul>
+  <li><strong>Call the shortlist in §3</strong>, lead-town entries first. Goal: 2–3 warm
+    conversations per channel type, not mass outreach — this is a trust business, not a lead-gen
+    funnel.</li>
+  <li><strong>Recruit 1–2 non-founder operators.</strong> The strongest candidates are local
+    computer-repair/IT technicians who already do in-home visits (§3.4) — they have the skill and
+    the truck; you're offering them a guild + a flat retainer model instead of one-off tickets.</li>
+  <li><strong>Join one chamber of commerce per cluster</strong> (Greater Northampton Chamber, and
+    the Granby-Simsbury Chamber for CT) — not for the badge, but for the monthly networking night,
+    where HOA managers, real-estate agents, and eldercare operators are already in the room
+    together.</li>
+  <li><strong>Make the referral CTA live</strong> inside the next statement cycle for the existing
+    3 clients — "refer a neighbor" — so the first channel-partner conversations aren't your only
+    source of new homes.</li>
+</ul>
+
+<h3>Days 61–90 — Convert + measure</h3>
+<ul>
+  <li><strong>Close whichever channel relationship is warmest</strong> into a pilot: a real-estate
+    agent offering A777ance setup as a move-in add-on, an HOA newsletter mention, or an elder-care
+    agency co-referral (their aides notice grandma's network is a mess; you fix it).</li>
+  <li><strong>Report against the metrics in §5</strong> and decide, per the roadmap's own gate,
+    whether you're at "10–20 homes + 1–2 operators" — the trigger for Phase 2 (the unified toggle
+    app). If not, extend Phase 1 rather than building early.</li>
+</ul>
+
+<hr>
+
+<h2>3. Prospect shortlist — with value justification (real businesses, web search 2026-07-14)</h2>
+<p><strong>Verify before calling</strong> — hours, staff, and contact details drift; treat this as a
+starting point, not a verified CRM record.</p>
+
+<div class="note">
+<strong>How to read the numbers below</strong> — three different kinds of claim, kept visually
+distinct so this stays honest:
+<ul>
+  <li><strong>Locked pricing (fact, from the Master Amounts Calculator, confirmed authoritative
+    2026-07-15):</strong> three tiers, not one.
+    <div class="tablewrap"><table>
+    <tr><th>Tier</th><th>Setup</th><th>Recurring</th><th>Billed to</th></tr>
+    <tr><td>Self-Service</td><td>$0</td><td>$20/mo</td><td>Alliance HQ, direct — no operator</td></tr>
+    <tr><td>Remote</td><td>$175</td><td>$20/mo</td><td>Alliance HQ, direct — founder-serviced, no operator</td></tr>
+    <tr><td>Local</td><td>$175</td><td>$20/mo</td><td><strong>The Operator, not HQ</strong> — the calculator's own footnote: "Alliance HQ never bills the customer directly in this model." HQ's only Local revenue is the flat $50/mo due per operator (ADR-005), independent of household count.</td></tr>
+    </table></div>
+    Every $ estimate in §3.1–3.3 and §3.6 uses the <strong>Remote tier</strong> ($175 + $20/mo to HQ)
+    as the baseline, since Phase 1's first 30 days have no operators recruited yet. Once an operator
+    is active in a town (§3.4), the same households more realistically land on the <strong>Local</strong>
+    tier instead — money stops flowing to HQ per household, and HQ's take reverts to the flat
+    $50/mo/operator regardless of book size. §3.4 uses Local's real structure, not Remote's.</li>
+  <li><strong>Cited external anchors (fact, web-sourced):</strong> e.g. NAR transaction data,
+    CAI/HOA sizing data — linked inline.</li>
+  <li><strong>Illustrative assumptions (judgment, not data):</strong> typical local association
+    size, existing operator book sizes. These are unproven — no real cohort exists yet (the repo's
+    own rule against inventing cohort data applies here too). They exist to help rank <em>which
+    calls to make first</em>, not to forecast revenue.</li>
+  <li><strong>Sales conversion — flat 5%</strong> (applied 2026-07-14): used everywhere a
+    cold-outreach conversion rate appears below (HOA units → signups; agent closings → take rate).
+    Any spread left in a table comes from the <em>size</em> input (units, agent headcount), not
+    from conversion uncertainty. Not applied in §3.4 (operator recruiting) — see the note there.</li>
+</ul>
+</div>
+
+<hr>
+
+<h3>CUSTOMER CHANNEL</h3>
+
+<h4>3.1 HOA / condo &amp; property management — the "one neighborhood" channel</h4>
+<p><strong>Why it works:</strong> a property manager already sends a monthly newsletter and sits in
+every board meeting; recommending a vendor costs them nothing and looks like a favor to residents.
+<strong>Value to them:</strong> fewer "my Wi-Fi is broken" calls routed to their office, plus a
+liability angle worth naming explicitly — a compromised resident network or shared-building device
+is a risk the manager absorbs too, not just an inconvenience. <strong>Value to A777ance:</strong>
+every home in one association is on the same street — the exact route-density Phase 1 needs.</p>
+<p><strong>The technical claim behind that pitch (verifiable, not marketing copy):</strong> per this
+stack's own <code>localDNS/CLAUDE.md</code>, personal/sensitive DNS queries resolve recursively
+through Unbound with DNSSEC and never leave the house; only bulk, low-sensitivity streaming domains
+get forwarded, encrypted, to Cloudflare for speed. "Residents' data doesn't route through a
+third-party cloud" is accurate for this specific setup — usable phrasing for a liability-conscious
+property manager or, per §3.6 below, an insurance agent.</p>
+<p><em>Sizing the opportunity (illustrative):</em> condo/HOA communities nationally average ~77
+units (28.2M units ÷ ~365,000 associations —
+<a href="https://ipropertymanagement.com/research/hoa-statistics">iPropertyManagement</a>,
+<a href="https://www.doorloop.com/blog/hoa-statistics">DoorLoop</a>), but most local, non-tower
+associations run smaller — "dozens to a few hundred" per the same sources. For a single Western
+MA/CT association, <strong>25–75 units</strong> is a more realistic working range than the national
+average. Layer the <strong>flat 5% conversion</strong> on top:</p>
+<div class="tablewrap"><table>
+<tr><th>Units in association</th><th>Conversion</th><th>Homes</th><th>One-time to HQ</th><th>Recurring to HQ</th></tr>
+<tr><td>25 (low)</td><td>5%</td><td>~1</td><td>$175</td><td>$20/mo</td></tr>
+<tr><td>75 (high)</td><td>5%</td><td>~4</td><td>$700</td><td>$80/mo</td></tr>
+</table></div>
+<div class="tablewrap"><table>
+<tr><th>Company</th><th>Area served</th><th>Contact</th><th>Distinguishing fact (cited)</th><th>Illustrative value to A777ance</th><th>First move</th></tr>
+<tr><td>Kendrick Property Management</td><td>Hadley / Northampton / Amherst, Franklin–Hampshire–Hampden Co.</td><td>(413) 253-0285 · <a href="https://www.kendrickmanagement.net/">kendrickmanagement.net</a></td><td>Focal presence in the exact lead-town cluster</td><td>1 association: <strong>$175–$700 one-time / $20–$80/mo</strong> (see table)</td><td>One-page vendor resource, no cost to them</td></tr>
+<tr><td>NAI Plotkin — Condo/HOA division</td><td>Western MA + Northern CT</td><td><a href="https://www.sdplotkin.com/services/condominium-hoa-management/">sdplotkin.com</a></td><td>Manages <strong>20+ HOAs</strong> across both target states — broadest single-relationship reach on this list</td><td>Portfolio upside if even 2–3 of their 20+ associations bite, at flat 5%: <strong>$350–$2,100 one-time / $40–$240/mo</strong> — still speculative, don't plan around the high end</td><td>Ask which associations sit in the Northampton/Enfield-adjacent towns specifically</td></tr>
+<tr><td>Spaeth Property Management</td><td>West Springfield, ~29 yrs in region</td><td><a href="https://www.spaethpropertymgmt.com/">spaethpropertymgmt.com</a></td><td>Multi-decade regional incumbent — likely several associations, count unconfirmed</td><td>1 association baseline (see table); ask their portfolio size on the call</td><td>Same one-page resource</td></tr>
+<tr><td>Premier Property Management</td><td>Enfield, CT (113 Elm St Ste 204)</td><td>(877) 208-4710</td><td>CT-side anchor, in the adjacent cluster</td><td>1 association baseline (see table)</td><td>Same</td></tr>
+<tr><td>CT Property Management</td><td>Enfield / Suffield / Simsbury, CT</td><td><a href="https://wemanagect.com/">wemanagect.com</a></td><td>Names all three lead CT towns directly</td><td>1 association baseline (see table)</td><td>Same</td></tr>
+</table></div>
+
+<h4>3.2 Real-estate brokerages — the "new homeowner" channel</h4>
+<p><strong>Why it works:</strong> move-in week is the single highest-intent moment for a household to
+accept a network setup offer, and it costs the agent nothing to mention. <strong>Value to
+them:</strong> a free differentiator to hand buyers ("one less thing on your list").
+<strong>Value to A777ance:</strong> a warm intro timed to exactly when someone's setting up a new
+home.</p>
+<p><em>Sizing the opportunity (illustrative):</em> NAR reports a <strong>median of 10 transaction
+sides per agent in 2024</strong> (12 in the 2022 member profile —
+<a href="https://www.homelight.com/blog/how-many-homes-does-a-realtor-sell-a-year/">HomeLight</a>,
+<a href="https://www.leanprop.com/posts/real-estate-agent-statistics">Leanprop</a>); treating that
+as roughly half buyer-side, half seller-side (the sources' own approximation, not a hard NAR split)
+gives <strong>~5–6 buyer-side closings/agent/year</strong> — i.e. ~5-6 households a year who are
+actually moving in. Layer the <strong>flat 5% conversion</strong> on a free offer:</p>
+<div class="tablewrap"><table>
+<tr><th>Buyer-side closings/agent/yr</th><th>Conversion</th><th>Homes/agent/yr</th><th>Reads as</th></tr>
+<tr><td>5 (2024 anchor)</td><td>5%</td><td>0.25</td><td>~1 home every 4 years, solo agent</td></tr>
+<tr><td>6 (2022 anchor)</td><td>5%</td><td>0.30</td><td>~1 home every 3 years, solo agent</td></tr>
+</table></div>
+<p>That's a real number, not a softened one: at a flat 5%, a <strong>solo</strong> agent is a very
+slow trickle. Each landed home is still worth the Remote-tier standard <strong>$175 one-time +
+$20/mo</strong> to HQ when it lands. This channel only gets interesting at the <strong>office/team level</strong> —
+multiply the per-agent rate by headcount. Agent headcounts for these offices are not yet verified;
+get that number on the call before judging the channel.</p>
+<div class="tablewrap"><table>
+<tr><th>Company</th><th>Area</th><th>Contact</th><th>Distinguishing fact (cited)</th><th>Illustrative value to A777ance</th><th>First move</th></tr>
+<tr><td>The Murphys Realtors, Inc.</td><td>Northampton — 3 offices</td><td><a href="https://www.murphyrealtors.com/">murphyrealtors.com</a></td><td>Multiple offices since 1960 — likely the largest agent headcount here, unconfirmed</td><td>0.5–1.5 homes/yr <strong>per agent</strong> × unconfirmed headcount</td><td>Ask total agent count across 3 offices</td></tr>
+<tr><td>The Maple and Main Team</td><td>Northampton / Florence / Easthampton / Hatfield</td><td>(413) 584-2900 · <a href="https://mapleandmainrealty.com/">mapleandmainrealty.com</a></td><td>Branded as a "team," not a solo practice</td><td>Same per-agent math × team size (ask)</td><td>Same</td></tr>
+<tr><td>Five College Realtors</td><td>Amherst / Northampton</td><td><a href="https://fivecollegerealtors.com/">fivecollegerealtors.com</a></td><td>Serves the university-town buyer demographic (newer local movers)</td><td>0.5–1.5 homes/yr per participating agent</td><td>Same</td></tr>
+<tr><td>Delap Real Estate</td><td>Northampton / Amherst / Pioneer Valley</td><td><a href="https://delaprealestate.com/">delaprealestate.com</a></td><td>Self-described as Pioneer Valley's most-trusted local realtor (their claim, not independently verified)</td><td>0.5–1.5 homes/yr per participating agent</td><td>Same</td></tr>
+<tr><td>Connecticut Real Estate Brokerage LLC (Steve Schappert)</td><td>Hartford Co. incl. Enfield / Granby / Simsbury</td><td>via <a href="https://www.simsburycoc.com/">simsburycoc.com</a> chamber listing</td><td>CT-side anchor, 40+ yrs experience (per listing)</td><td>0.5–1.5 homes/yr, solo practice</td><td>Chamber intro first (see §3.5)</td></tr>
+</table></div>
+
+<h4>3.3 Elder-care / in-home senior care — the strongest emotional angle</h4>
+<p><strong>Why it works:</strong> aides are already inside these homes and already absorb tech
+complaints and scam-call fallout informally, unpaid. <strong>Value to them:</strong> a vetted
+referral offloads a liability/time burden they don't want. <strong>Value to A777ance:</strong> the
+closest match to the "pest control" positioning — quiet prevention nobody thinks about until it
+isn't there — plus a household.</p>
+<p><em>Sizing the opportunity:</em> <strong>no public, citable figure</strong> was found for active
+client caseloads at any of these five agencies, and none is invented here — that would break the
+same honesty rule this repo already applies to the "How You Compare" statement benchmark. Treat
+this as a <strong>trust channel, not a volume channel</strong>, until real numbers exist. The first
+call itself should ask the denominator: <em>"how many households do your aides currently serve in
+[Northampton/Enfield-area towns]?"</em> — once that number exists, apply the same flat 5%
+conversion as every other channel: caseload × 5% = expected homes, each worth $175 one-time +
+$20/mo to HQ (Remote tier).</p>
+<div class="tablewrap"><table>
+<tr><th>Company</th><th>Area</th><th>Contact</th><th>Distinguishing fact (cited)</th><th>First move</th></tr>
+<tr><td>Visiting Angels West Springfield</td><td>Springfield, W. Springfield, Longmeadow, Westfield, Holyoke, Chicopee</td><td><a href="https://www.visitingangels.com/westspringfield/home">visitingangels.com/westspringfield</a></td><td>Names 8+ towns in the MA cluster directly</td><td>Ask caseload + towns served first</td></tr>
+<tr><td>WestMass ElderCare, Inc.</td><td>Western MA Area Agency on Aging (nonprofit ASAP)</td><td>wmeldercare.org</td><td>Public-mandate nonprofit, not a for-profit franchise — different pitch (mission fit, not a sales lead)</td><td>Position as a community-education partner, not a referral deal</td></tr>
+<tr><td>Access Care Partners Inc.</td><td>Holyoke, Chicopee, S. Hadley, Granby MA, Belchertown, Ludlow, Ware</td><td><a href="https://accesscarepartners.org/programs-services/">accesscarepartners.org</a></td><td>Nonprofit since 1974, same ASAP family</td><td>Same nonprofit framing</td></tr>
+<tr><td>Comfort Keepers</td><td>62 LaSalle Rd Ste 303, West Hartford, CT</td><td>(860) 932-6300 · <a href="https://www.comfortkeepers.com/offices/connecticut/west-hartford/">comfortkeepers.com</a></td><td>For-profit franchise, CT-side</td><td>Standard referral pitch, ask caseload</td></tr>
+<tr><td>My Care Companion</td><td>West Hartford / Hartford / Farmington / Glastonbury, CT</td><td><a href="https://www.mycarecompanion.com/">mycarecompanion.com</a></td><td>Private-duty, CT-side</td><td>Same</td></tr>
+</table></div>
+
+<h4>3.6 Insurance agents/brokers — the "risk conversation" channel</h4>
+<p><strong>Why it works:</strong> an independent agent already has a risk conversation with every
+homeowner at binding and renewal, and there's a real, documented coverage gap that maps closely
+onto what A777ance reduces. <strong>Value to them:</strong> a value-add they can raise in a
+conversation they're already having, without underwriting anything themselves. <strong>Value to
+A777ance:</strong> a homeowner talking to their insurance agent is already in a risk-and-liability
+mindset — a stronger frame to enter on than a cold "pest control" pitch.</p>
+<p><strong>What was verified (cited) before using this as a pitch:</strong></p>
+<ul>
+  <li><strong>Real, but a different product than ours:</strong> monitored <em>physical</em>
+    security systems (burglar alarms, water-leak sensors) earn genuine discounts — 5–20% off
+    premium, roughly $75–$460/yr on a ~$2,300 policy, gated on 24/7 professional monitoring.
+    Sources: <a href="https://www.nerdwallet.com/insurance/homeowners/learn/smart-home-insurance-discount">NerdWallet</a>,
+    <a href="https://www.policygenius.com/homeowners-insurance/how-much-can-you-save-on-home-insurance-with-a-security-system/">Policygenius</a>,
+    <a href="https://www.amfam.com/insurance/home/discounts/safe-secure-smart-home-discount">American Family</a>.
+    <strong>This is alarm/leak-sensor monitoring, not network/DNS security — no evidence was found
+    that A777ance itself qualifies for this specific discount, and none is claimed here.</strong></li>
+  <li><strong>Real coverage gap, directly relevant:</strong> standard homeowners policies (ISO
+    HO-3/HO-5 forms) do <strong>not</strong> include cyber coverage by default. Sources:
+    <a href="https://www.nerdwallet.com/insurance/homeowners/learn/personal-cyber-insurance">NerdWallet</a>,
+    <a href="https://www.forbes.com/advisor/homeowners-insurance/personal-cyber-insurance/">Forbes Advisor</a>,
+    <a href="https://www.usnews.com/insurance/homeowners-insurance/what-is-personal-cyber-insurance">U.S. News</a>.</li>
+  <li><strong>Real, growing product:</strong> homeowners can add a cyber/ID-theft rider (sublimit
+    often $10k–$25k) or a standalone personal cyber policy ($100k–$250k limits, ~$250–$500/yr), and
+    industry material names the driver explicitly: <strong>networked smart-home devices</strong>
+    (cameras, thermostats, locks, voice assistants) expanding a household's attack surface.
+    Sources: <a href="https://www.mercuryinsurance.com/insurance/home-cyber-protection/">Mercury Insurance</a>,
+    <a href="https://www.grangeinsurance.com/tips/home-cyber-versus-identity-theft">Grange Insurance</a>,
+    <a href="https://smarthomesecurityauthority.com/smart-home-cyber-insurance/">Smart Home Security Authority</a>.</li>
+</ul>
+<p><strong>What's not verified — say this honestly on the call, don't assume it:</strong></p>
+<ul>
+  <li>Whether any specific carrier credits a <em>monitored home network</em> itself (as opposed to a
+    monitored alarm system) — general search found nothing; ask the broker directly, they know
+    their carriers' underwriting guidelines better than public sources show.</li>
+  <li>Book-of-business size for any of these specific agencies. General search only turned up a
+    wide, mixed-reliability range (roughly 1,000–1,800 policies/year for a solo agent, not broken
+    out by home vs. auto or new vs. renewal) — too noisy to build a table on, unlike the NAR/HOA
+    anchors above. Same treatment as §3.3: get the real number on the call, then apply the flat
+    5%: new homeowner policies bound/year × 5% = expected referred homes, each worth $175 one-time
+    + $20/mo to HQ (Remote tier).</li>
+</ul>
+<p><strong>The honest pitch, given all that:</strong> not "get a discount" — "your clients are
+increasingly buying coverage for a risk category (networked smart-home device compromise) that
+A777ance directly reduces; worth a mention alongside that conversation, especially right after a
+claim or a near-miss."</p>
+<div class="tablewrap"><table>
+<tr><th>Company</th><th>Area served</th><th>Contact</th><th>Distinguishing fact (cited)</th><th>First move</th></tr>
+<tr><td>Dryden Insurance Agency</td><td>Enfield, Simsbury, Suffield, Windsor Locks, CT</td><td><a href="https://drydenagency.com/">drydenagency.com</a></td><td>Names all four lead CT towns directly — the tightest geographic match on this entire shortlist</td><td>Risk-conversation framing, not a discount pitch</td></tr>
+<tr><td>The Jarrett Agency</td><td>Enfield, Windsor Locks, Suffield, South Windsor, Somers, Ellington, CT</td><td>Trusted Choice / agency listing</td><td>Independent, family-run since <strong>1918</strong> — deep local trust</td><td>Same</td></tr>
+<tr><td>Brooks, Todd &amp; McNeil</td><td>Torrington, Enfield, South Windsor, CT</td><td><a href="https://www.brookstoddmcneil.com/">brookstoddmcneil.com</a></td><td>Licensed with 87 carriers — broad market access if they want to shop a client's cyber rider</td><td>Same</td></tr>
+<tr><td>Finck &amp; Perras Insurance Agency</td><td>Northampton, Easthampton, Florence, Hampshire Co., MA</td><td>via <a href="https://www.andovercompanies.com/agent-locator/finck-perras-insurance-agency-northampton/">andovercompanies.com</a></td><td>Locally owned, names the exact lead MA towns</td><td>Same</td></tr>
+<tr><td>King &amp; Cushman</td><td>Amherst / Northampton, MA</td><td><a href="https://www.kingcushman.com/">kingcushman.com</a></td><td>Full-service, multi-carrier, shops top carriers for the client</td><td>Same</td></tr>
+<tr><td>Bresnahan Insurance Agency</td><td>Holyoke &amp; Amherst, MA</td><td>—</td><td>Family-owned 65+ years — deep local roots</td><td>Same</td></tr>
+</table></div>
+
+<hr>
+
+<h3>OPERATOR RECRUIT CHANNEL <span class="tag">not customers — labor supply</span></h3>
+
+<h4>3.4 Local IT / computer-repair shops</h4>
+<p><strong>Why it works:</strong> these shops already have the truck, the in-home trust, and the
+skill; they're currently billing one ticket at a time with no recurring revenue and no marketing
+engine. <strong>Value to them:</strong> joining converts unpredictable ticket income into a flat-due
+retainer book, plus a portfolio page that markets them instead of them chasing the next job.
+<strong>Value to A777ance:</strong> solves the Phase 1 roadmap's explicit need for 1–2 non-founder
+operators — supply without a hire.</p>
+<p><em>Sizing the opportunity — corrected to the calculator's actual Local-model structure (this
+replaces an earlier, wrong version of this section that assumed HQ billed the household
+directly):</em> the <strong>$50/mo due is a locked fact</strong> (ADR-005) — guaranteed the moment
+someone joins, flat, and it does <strong>not</strong> scale with book size. Per the calculator's own
+footnote, <em>"Alliance HQ never bills the customer directly in this model"</em> — an operator's
+folded-in customers pay <strong>the operator</strong> $175 one-time + $20/mo directly, not HQ. So
+recruiting one operator is worth exactly <strong>$50/mo to HQ, whether they bring 5 households or
+30</strong>. Book size changes the operator's own income and the guild's visible density/proof —
+not HQ's direct cut.</p>
+<div class="tablewrap"><table>
+<tr><th>Operators recruited</th><th>Guaranteed recurring to HQ</th></tr>
+<tr><td>1</td><td>$50/mo</td></tr>
+<tr><td>2</td><td>$100/mo</td></tr>
+</table></div>
+<p>The real lever for HQ here is <strong>operator count, not operator book size</strong> — recruiting
+a second operator is worth exactly as much to HQ as growing the first operator's book from 5
+households to 30. Book size still matters, just not to HQ directly: it's what makes membership
+worth $50/mo to the <em>operator</em>, and it's what generates the route density and testimonials
+the rest of Phase 1 depends on (§2).</p>
+<p><em>Note on the flat 5% rule:</em> still not applied here, for the same reason as before — this is
+an operator's <em>existing, already-trusting</em> book choosing to migrate onto the platform, not a
+cold-sales conversion, so a cold-outreach conversion rate isn't the right stand-in regardless of the
+pricing fix above.</p>
+<div class="tablewrap"><table>
+<tr><th>Shop</th><th>Area</th><th>Contact</th><th>Distinguishing fact (cited)</th><th>First move</th></tr>
+<tr><td>The Friendly IT Guy</td><td>Springfield &amp; Northampton MA <strong>+</strong> Enfield &amp; Windsor CT</td><td><a href="https://www.thefriendlyitguy.com/troubleshooting">thefriendlyitguy.com</a></td><td>The only shop found that already straddles <strong>both</strong> target clusters — solves the two-state-route problem directly</td><td>Peer economics conversation: "how does this compare to what you bill now"</td></tr>
+<tr><td>Northampton IT</td><td>Northampton, MA</td><td><a href="https://northamptonit.com/">northamptonit.com</a></td><td>30+ years serving govt/school/nonprofit/business clients — an established local book</td><td>Same</td></tr>
+<tr><td>Northampton Computer Repair</td><td>12 Main St, Northampton, MA</td><td><a href="https://www.northamptoncomputerrepair.com">northamptoncomputerrepair.com</a></td><td>Downtown storefront — walk-in trust already built</td><td>Same</td></tr>
+<tr><td>Green Earth Computers</td><td>Amherst &amp; Northampton, MA</td><td><a href="https://www.greenearthcomputers.us/services">greenearthcomputers.us</a></td><td>Already advertises home network install/security as a service line</td><td>Same</td></tr>
+<tr><td>New England PC &amp; Web</td><td>Springfield / Western MA</td><td><a href="http://www.nepcw.com/western_massachusetts_computer_consultants.html">nepcw.com</a></td><td>Already does server/network/VPN consulting — closest existing skill match to the A777ance stack</td><td>Same</td></tr>
+</table></div>
+
+<hr>
+
+<h3>ACCESS POINT <span class="tag">not a channel — a room where the above already gather</span></h3>
+
+<h4>3.5 Chambers of commerce</h4>
+<p><strong>Why this is different from 3.1–3.4:</strong> a chamber isn't a prospect and doesn't
+convert into homes or operators itself — it's a room where several HOA managers, agents, and
+eldercare contacts already show up monthly. No $ estimate is forced onto it here; that would be a
+fabricated number dressed up as a channel.</p>
+<p><strong>Cost side, honestly:</strong> dues weren't published for either chamber below — searches
+came up empty, and none is guessed here. Get the number on the call.</p>
+<div class="tablewrap"><table>
+<tr><th>Org</th><th>Area</th><th>Contact</th><th>Fact (cited)</th><th>First move</th></tr>
+<tr><td>Greater Northampton Chamber of Commerce</td><td>Northampton, MA (99 Pleasant St)</td><td>(413) 584-1900 x102 — Katie McLaughlin, Investor &amp; Community Relations · <a href="https://www.northamptonchamber.com/">northamptonchamber.com</a></td><td>Free monthly "ARRIVE@5" night, ~150 local business attendees; dues cost not published — sliding scale by business type/size per the chamber's own site</td><td>Ask dues + attend one ARRIVE@5 before joining</td></tr>
+<tr><td>Amherst Area Chamber of Commerce</td><td>Amherst, MA</td><td><a href="https://www.amherstarea.com/">amherstarea.com</a></td><td>Dues on a <strong>published sliding scale by employee count</strong> (only chamber here with that confirmed)</td><td>Ask for the scale directly</td></tr>
+<tr><td>Granby-Simsbury Chamber of Commerce</td><td>Granby / Simsbury, CT</td><td>(860) 651-7307 / (860) 653-5085 · <a href="https://www.simsburycoc.com/">simsburycoc.com</a></td><td>Real-estate + property-management firms (incl. §3.2's CT broker) already listed as members — confirms this room already has your other two channels in it</td><td>Ask dues + whether a guest visit is possible before joining</td></tr>
+</table></div>
+
+<hr>
+
+<h3>Data gaps to close on the first calls (don't guess past these)</h3>
+<ul>
+  <li>HOA/condo unit counts for every named company except NAI Plotkin's "20+" headline figure.</li>
+  <li>Real-estate office/team agent headcounts (Murphys' 3-office total, Maple and Main's team size, etc.).</li>
+  <li>Elder-care agency active caseloads in the target towns.</li>
+  <li>Insurance agencies' new-homeowner-policy volume per year (no reliable public figure — same treatment as elder-care caseloads).</li>
+  <li>Whether any specific carrier credits a monitored home network itself, distinct from the standard monitored-alarm discount — ask a broker.</li>
+  <li>IT shop existing customer-book sizes.</li>
+  <li>Both chambers' actual membership dues.</li>
+</ul>
+
+<hr>
+
+<h2>4. Outreach script skeletons (starting points, tune per conversation)</h2>
+<ul>
+  <li><strong>HOA/property manager:</strong> "I run a local service that keeps home networks — Wi-Fi,
+    VPN, filtering — quietly maintained, with a monthly proof-of-work report homeowners actually
+    read. Would [board / newsletter] be open to a one-page intro for [community name]? No cost to
+    the HOA — homeowners pay their own membership."</li>
+  <li><strong>Real-estate agent:</strong> "I help new homeowners get their network set up and secured
+    in move-in week — one less thing on the closing checklist. Happy to give you a one-pager you can
+    hand buyers, no referral fee expected up front — I'd rather earn the relationship."</li>
+  <li><strong>Elder-care agency:</strong> "Your aides are in these homes anyway — a lot of them are
+    dealing with routers that don't work and grandparents who are one scam call away from trouble. I
+    run a managed home-network service built around exactly that — quiet, monthly-verified, and it
+    takes the tech burden off your staff."</li>
+  <li><strong>IT/computer-repair operator recruit:</strong> "You're already doing in-home network work
+    one ticket at a time. I've built a guild model — flat $50/mo due, a portfolio dashboard that
+    markets your book of homes, and a matching engine that sends you customers — instead of chasing
+    one-off jobs. Want to see how the economics compare to what you're billing now?"</li>
+</ul>
+
+<hr>
+
+<h2>5. Metrics to track (from the existing roadmap — don't invent new ones)</h2>
+<ul>
+  <li><strong>Density:</strong> homes per active route in the two lead towns.</li>
+  <li><strong>Referral rate:</strong> % of new homes sourced from existing customers.</li>
+  <li><strong>Conversion:</strong> % of customers expressing interest in becoming operators.</li>
+  <li><strong>Operator economics:</strong> homes per operator, dues coverage.</li>
+  <li><strong>Retention:</strong> monthly churn.</li>
+  <li><strong>Channel yield (new this quarter):</strong> homes sourced per customer channel
+    (HOA / real-estate / elder-care / insurance), tracked separately from operators recruited via
+    the IT-shop channel and from the organic neighbor-referral rate above (that one isn't a §3
+    channel at all) — tells you which channel to double down on before Phase 2.</li>
+</ul>
+
+<h2>6. What this plan deliberately does <em>not</em> do</h2>
+<ul>
+  <li>No paid ads, no billboard, no mass-market spend — liquidity-before-app means spend goes into
+    relationships and proof, not media buys, for these 90 days.</li>
+  <li>No invented cohort data or fabricated "how you compare" benchmarks — the
+    honesty-of-the-kept-document rule holds for marketing collateral too.</li>
+  <li>No claims about pricing beyond the Master Amounts Calculator's three tiers (Self-Service
+    $0+$20/mo; Remote $175+$20/mo; Local $175+$20/mo to the Operator, $50/mo flat due to HQ) — this
+    supersedes the README's older ADR-007 figure, per confirmation 2026-07-15.</li>
+</ul>
+
+<footer>
+  A777ance — internal strategy document, published for reference. Prospect details drift; verify
+  before calling. See the private <code>MARKETING</code> repo for the full pricing/roadmap history
+  this document executes against.
+</footer>
+</div>
